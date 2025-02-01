@@ -1,0 +1,99 @@
+body {
+  background-color: rgb(37, 36, 36);
+  padding: 0;
+  margin: 0;
+}
+
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 5px solid black;
+  background-color: white;
+  rotate: -90deg;
+}
+
+.clock-img {
+  position: absolute;
+  left: -14.6px;
+  rotate: 90deg;
+  top: -14.5px;
+}
+
+.clock-img img {
+  width: 225px;
+}
+
+
+
+.hand {
+  width: 50%;
+  height: 4px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+}
+
+.hour {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 25%;
+  height: 6px;
+  background-color: rgb(50, 49, 49);
+}
+
+.minute {
+  position: relative;
+  top: 47%;
+  left: 50%;
+  width: 35%;
+  height: 6px;
+  background-color: gray;
+}
+
+.second {
+  transition: transform 0.001s linear;
+  /* transform-origin: center bottom; */
+  position: relative;
+  top: 44%;
+  left: 50%;
+  width: 40%;
+  opacity: 0.8;
+  height: 6px;
+  background-color: rgb(204, 85, 85);
+}
+
+.card {
+  display: flex;
+  color: white;
+  width: fit-content;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  gap: 10px;
+  font-size: xx-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hr,
+.min,
+.sec {
+  background-color: grey;
+  padding: 20px;
+}
